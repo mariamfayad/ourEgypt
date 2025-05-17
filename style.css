@@ -1,94 +1,132 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 /* navbar start */
-#navbar{
+#navbar {
     background: #f9f9f9;
 }
-#logo{
+
+#logo {
     font-size: 25px;
     font-weight: 700;
-    color:rgb(223, 12, 12);
+    color: rgb(223, 12, 12);
     text-shadow: 0px 1px 1px rgb(223, 12, 12);
     margin-bottom: 5px;
 }
-#logo span{
+
+#logo span {
     color: red;
 }
-.navbar-toggler span{
-    color:#ffa500;
+
+.navbar-toggler span {
+    color: #ffa500;
 }
-.navbar-nav{
+
+.navbar-nav {
     margin-left: 20px;
 }
-.nav-item .nav-link{
+
+.nav-item .nav-link {
     font-size: 16px;
     font-weight: 500;
     font-weight: bolder;
-    color:black;
+    color: black;
     letter-spacing: 1px;
     border-radius: 3px;
     transition: .5s ease;
 }
-.nav-item .nav-link:hover{
+
+.nav-item .nav-link:hover {
     background: #ffa500;
     color: white;
 }
-#navbar form button{
+
+#navbar form button {
     background: #ffa500;
     color: white;
     border: none;
 }
+
 /* navbar end */
 
 /* home start */
-.home{
+.home {
     width: 100%;
     height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.2)),url(./image/travel-egypt.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .2)), url(./image/travel-egypt.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
-.home .content{
+
+.home .content {
     text-align: center;
     padding-top: 200px;
 }
-.home .content h5{
-    color:white;
+
+.home .content h5 {
+    color: rgba(255, 255, 255, 0.603);
     font-size: 38px;
     font-weight: 500;
     text-shadow: 0px 1px 1px black;
 }
-.home .content h1{
+
+.home .content h1 {
     color: white;
     font-size: 70px;
     font-weight: 500;
     text-shadow: 0px 1px 1px black;
     margin-top: 5px;
 }
-.changecontent::after{
-    content:' ';
+
+.changecontent::after {
+    content: ' ';
     color: #ffa500;
     text-shadow: 0px 1px 1px black;
     animation: changetext 10s infinite linear;
 }
-@keyframes changetext{
-    0%{content:"Cairo";}
-    10%{content:"Aswan";}
-    20%{content:"Alexandria";}
-    30%{content:"Dahb";}
-    40%{content:"Hurghada";}
-    50%{content:"Sharm El-Shaikh";}
-    60%{content:"Luxor";}
-    70%{content: "Giza";}
+
+@keyframes changetext {
+    0% {
+        content: "Cairo";
+    }
+
+    10% {
+        content: "Aswan";
+    }
+
+    20% {
+        content: "Alexandria";
+    }
+
+    30% {
+        content: "Dahb";
+    }
+
+    40% {
+        content: "Hurghada";
+    }
+
+    50% {
+        content: "Sharm El-Shaikh";
+    }
+
+    60% {
+        content: "Luxor";
+    }
+
+    70% {
+        content: "Giza";
+    }
 }
-.home .content p{
+
+.home .content p {
     color: white;
     font-size: 15px;
     font-weight: 600px;
@@ -96,7 +134,8 @@
     margin-bottom: 30px;
     margin-top: 5px;
 }
-.home .content a{
+
+.home .content a {
     padding: 10px;
     background: white;
     color: black;
@@ -106,34 +145,40 @@
     text-decoration: none;
     transition: .5s;
 }
-.home .content a:hover{
+
+.home .content a:hover {
     background: #ffa500;
-    color:white;
+    color: white;
 }
 
 /* home end */
 /* start book*/
-.book{
+.book {
     background: #f9f9f9;
     padding: 50px;
 }
+
 .main-text h1 {
     text-align: center;
     box-shadow: 0px 1px 1px black;
     font-weight: 600;
 
 }
-.main-text h1 span{
+
+.main-text h1 span {
     color: #ffa500;
 }
-.book .card{
+
+.book .card {
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
 }
-.book .row{
+
+.book .row {
     margin-top: 30px;
 }
-.book form input{
+
+.book form input {
     padding: 10px;
     color: black;
     border: none;
@@ -142,172 +187,205 @@
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
 }
-.book form textarea{
+
+.book form textarea {
     border: none;
     border-radius: 10px;
     resize: none;
     box-shadow: 0px 5px 5px -6px black;
     height: 200px;
 }
-.book .submit{
+
+.book .submit {
     width: 160px;
     font-size: 16px;
-    font-weight:550;
+    font-weight: 550;
     background: #ffa500;
     color: white;
     margin-top: 10px;
     transition: 0.5s;
 }
-.book .submit :hover{
+
+.book .submit :hover {
     width: 170px;
 }
-@media(max-width:765px){
-    book{
+
+@media(max-width:765px) {
+    book {
         padding: 0;
     }
-    .main-text h1{
+
+    .main-text h1 {
         padding: 20px;
     }
 }
+
 /* end book*/
 /*start packages*/
-.main-txt h1{
+.main-txt h1 {
     text-align: center;
     margin-top: 30px;
     font-weight: 600;
     text-shadow: 0px 1px 1px black;
 }
-.main-txt h1 span{
+
+.main-txt h1 span {
     color: #ffa500;
 }
-.main-txt h2{
-    text-align:start;
+
+.main-txt h2 {
+    text-align: start;
     margin-top: 30px;
     font-weight: 600;
     text-shadow: 0px 1px 1px black;
 }
-.main-txt h2 span{
+
+.main-txt h2 span {
     color: #ffa500;
 }
-.packages .card{
+
+.packages .card {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0, 0, 0, 1) 0px 4px 12px;
 }
-.packages .card img{
+
+.packages .card img {
     border-radius: 5px;
 }
-.packages .card .card-body
-{
+
+.packages .card .card-body {
     background: transparent;
 }
-.packages .card .card-body h3{
+
+.packages .card .card-body h3 {
     font-size: 25px;
     font-weight: 600;
 }
-.packages .card .card-body p{
+
+.packages .card .card-body p {
     font-size: 15px;
 }
-.checked
-{
+
+.checked {
     color: #ffa500;
 }
-.star i{
+
+.star i {
     font-size: 15px;
 
 }
-.packages .card .card-body h6{
+
+.packages .card .card-body h6 {
     font-size: 20px;
 }
-.packages .card .card-body a{
+
+.packages .card .card-body a {
     padding: 10px;
     text-decoration: none;
     background: #ffa500;
     color: white;
     border-radius: 5p;
-    
+
 }
 
 /*end packages*/
 
-.gallery{
+.gallery {
     margin-top: 50px;
 }
-.gallery .card{
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  cursor: pointer;
+
+.gallery .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
 }
-.gallery .card img{
+
+.gallery .card img {
     border-radius: 10px;
     transition: 0.5s;
 }
-.gallery .card img:hover{
+
+.gallery .card img:hover {
     transform: scale(1.1);
 }
-#gallery h1 span{
-    color:  #ffa500;
+
+#gallery h1 span {
+    color: #ffa500;
 }
-.about{
+
+.about {
     padding: 50px;
     margin-top: 50px;
     background: white
 }
-.about .card{
+
+.about .card {
     border-radius: 10px;
 }
-.about .card img{
+
+.about .card img {
     border-radius: 10px;
     width: 500px;
     height: 500px;
 }
-.about h2{
+
+.about h2 {
     font-weight: 600;
     letter-spacing: 1px;
 }
-#about h1 span{
-    color:#ffa500;
+
+#about h1 span {
+    color: #ffa500;
 }
-.about p{
+
+.about p {
     font-weight: 500;
 }
-#about-btn{
+
+#about-btn {
     width: 150px;
     height: 38px;
     border: none;
     border-radius: 5px;
-    background:#ffa500;
+    background: #ffa500;
     color: white;
     letter-spacing: 2px;
     font-weight: 550;
     transition: 0.5s ease;
     cursor: pointer;
 }
-#about-btn:hover{
+
+#about-btn:hover {
     width: 170;
 }
-@media (max-width:765px){
-    .about{
+
+@media (max-width:765px) {
+    .about {
         padding: 0;
     }
 }
-#footer{
+
+#footer {
     width: 100%;
     margin-top: 150px;
     text-align: center;
-    background:whitesmoke;
+    background: whitesmoke;
 }
+
 #footer h1 {
     font-weight: 600;
     padding-top: 30px;
     text-shadow: 0px 0px 1px black;
 }
-#footer h1 span{
-  color:#ffa500;
+
+#footer h1 span {
+    color: #ffa500;
 }
-.social-links i{
+
+.social-links i {
     padding: 10px;
     border-radius: 5px;
     font-size: 20px;
@@ -318,8 +396,7 @@
     transition: 0.5s ease;
     cursor: pointer;
 }
-.social-links i:hover{
+
+.social-links i:hover {
     background: #ffa500;
 }
-
-
